@@ -1,3 +1,3 @@
 # CMUCal
 
-i like to code
+we like to code
