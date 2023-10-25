@@ -1,11 +1,9 @@
-import './App.css';
+import Page from "./Page";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        cmu cal 🔜
-      </header>
+    <div className="App h-screen bg-zinc-800 p-2">
+      <Page />
     </div>
   );
 }
