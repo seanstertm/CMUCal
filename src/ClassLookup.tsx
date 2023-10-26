@@ -1,6 +1,11 @@
+import React from "react";
 import { useState } from "react";
 
-function ClassLookup(props) {
+type Props = {
+  className: string
+}
+
+function ClassLookup(props: Props) {
 
   const[className, setClassName] = useState('')
 

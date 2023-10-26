@@ -1,3 +1,4 @@
+import React from "react";
 import ClassLookup from "./ClassLookup";
 
 function Page() {
