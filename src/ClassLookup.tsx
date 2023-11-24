@@ -21,12 +21,12 @@ function ClassLookup(props: Props) {
   return (
     <div className={props.className + " flex flex-col gap-2"}>
       <input
-        className=""
+        className="overflow-x-clip"
         value={className}
         onChange={e => setClassName(e.target.value)}
       />
       <TypeSelection className="" selected={selectionType} selectionFunction={setSelectionType} />
-      <Lookup className="" args={className} />
+      <Lookup className="" args={className} selected={selectionType} />
     </div>
   )
 }
