@@ -40,7 +40,7 @@ function Lookup(props: Props) {
     <div className={props.className + " flex flex-col overflow-y-scroll"}>
       {json.payload.map((elem, i) => {
         if (!elem.course_name.includes(props.args) && !elem.course_id.includes(props.args)) return undefined
-        return (<EventInfo className="" eventJson={elem} key={i} />)
+        return (<EventInfo className="" eventJson={elem} elemKey={i} key={i + elem.resource_type} />)
       })}
     </div>
   )
